@@ -5,6 +5,9 @@ metadata:
   labels:
     app: mywebsite
 spec:
+  source:
+    git:
+      uri: "https://github.com/abhayachogale/FirstMicroservice"
   strategy:
     type: Docker
     dockerStrategy:
@@ -12,4 +15,4 @@ spec:
   output:
     to:
       kind: "DockerImage"
-      name: "https://hub.docker.com/repository/docker/abhayachogale/javatechie_1/firstmicroservice:001"
+      name: "abhayachogale/javatechie_1/firstmicroservice:001"
