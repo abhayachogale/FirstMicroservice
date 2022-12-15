@@ -1,0 +1,15 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: mywebsite
+  labels:
+    app: mywebsite
+spec:
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: Dockerfile    # Look for Dockerfile in: gitUri/contextDir/dockerfilePath
+  output:
+    to:
+      kind: "DockerImage"
+      name: "https://hub.docker.com/repository/docker/abhayachogale/javatechie_1/firstmicroservice:001"
