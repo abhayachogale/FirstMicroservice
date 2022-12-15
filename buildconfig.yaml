@@ -15,4 +15,4 @@ spec:
   output:
     to:
       kind: "DockerImage"
-      name: "abhayachogale/javatechie_1/firstmicroservice:001"
+      name: "hub.docker.com/repository/docker/abhayachogale/mywebsite-11:latest"
